@@ -2,12 +2,14 @@
     * {
         margin: 0px;
         padding: 0px;
+        font-family: 'helvetica';
+        font-style: normal;
     }
     a {
         text-decoration: none;
     }
     body {
-        background-image: url("../image/football-stadium-254435_960_720.webp");
+        background-image: url("../image/background\ image.jpeg");
         Background-position: center top;
         background-repeat: no-repeat;
         Background-size: center;
