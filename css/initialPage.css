@@ -1,0 +1,137 @@
+@media (max-width: 600px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    a {
+        text-decoration: none;
+    }
+    body {
+        background-image: url("../image/football-stadium-254435_960_720.webp");
+        Background-position: center top;
+        background-repeat: no-repeat;
+        Background-size: center;
+    }
+    li {
+        padding: 25px 0px;
+    }
+    #buttonInsideMenu {
+        color: white;
+        background-color: rgba(77, 54, 123, 255);
+        border-radius: 0px 6px 6px 0px;
+        font-size: xxx-large;
+        padding: 5px;
+        margin: 2px;
+    }
+    #logo {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    #header {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        height: 70px;
+        padding: 1rem;
+        justify-content: space-between;
+    }
+    #menu {
+        display: block;
+        list-style: none;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: white;
+        z-index: 100;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #btn-menu {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    #hamburguer {
+        color: white;
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #footer {
+        background: rgba(77, 54, 123, 255);
+        height: 250px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    #imageMenu {
+        display: none;
+    }
+    #imageMenu img {
+        margin: 25px;
+        max-width: 100px;
+        max-height: 75px;
+        width: auto;
+        height: auto;
+    }
+    #footer.active #imageMenu {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        padding: 25px;
+        justify-content: space-between;
+        z-index: 1000;
+    }
+    #backFooter img {
+        margin: 25px;
+        max-width: 100px;
+        max-height: 75px;
+        width: auto;
+        height: auto;
+    }
+    #backFooter {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        padding: 25px;
+        justify-content: space-between;
+    }
+    #paragrafe {
+        color: white;
+        padding: 35px;
+    }
+    #animatedButton {
+        background: transparent;
+        border: transparent;
+    }
+}
