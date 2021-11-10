@@ -12,6 +12,9 @@
     li {
         padding: 25px 0px;
     }
+    ul {
+        list-style: none;
+    }
     #buttonInsideMenu {
         color: white;
         background-color: rgba(77, 54, 123, 255);
@@ -85,21 +88,17 @@
         visibility: visible;
         overflow-y: auto;
     }
-    #cardEvent {
-        padding: 20px 0;
-        text-align: center;
+    #containerTitle {
+        padding: 20px;
     }
     #titleEvent {
         font-size: 1.75rem;
         color: rgba(77, 54, 123, 255);
         padding-bottom: 5px;
     }
-    #cardEvent img {
-        border-radius: 20px;
-    }
     #infoEvent {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     #localEvent {
         font-size: x-large;
@@ -113,6 +112,21 @@
     #btn-event {
         background: transparent;
         border: transparent;
+    }
+    #sector {
+        display: flex;
+        align-items: center;
+        padding: 3px;
+    }
+    #listSector {
+        padding: 20px;
+    }
+    #listSector a {
+        font-size: xxx-large;
+        color: rgba(77, 54, 123, 255);
+    }
+    #listSector img {
+        transform: rotate(90deg)
     }
     #footer {
         height: 250px;
