@@ -7,10 +7,7 @@
         text-decoration: none;
     }
     body {
-        background-image: url("../image/football-stadium-254435_960_720.webp");
-        Background-position: center top;
-        background-repeat: no-repeat;
-        Background-size: center;
+        background-color: white;
     }
     li {
         padding: 25px 0px;
@@ -19,13 +16,13 @@
         color: white;
         background-color: rgba(77, 54, 123, 255);
         border-radius: 0px 6px 6px 0px;
-        font-size: xxx-large;
+        font-size: xx-large;
         padding: 5px;
         margin: 2px;
     }
     #logo {
         color: white;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: bold;
     }
     #header {
@@ -35,6 +32,7 @@
         height: 70px;
         padding: 1rem;
         justify-content: space-between;
+        background-color: rgba(77, 54, 123, 255);
     }
     #menu {
         display: block;
@@ -87,8 +85,34 @@
         visibility: visible;
         overflow-y: auto;
     }
+    #cardEvent {
+        padding: 20px 0;
+        text-align: center;
+    }
+    #titleEvent {
+        font-size: 1.75rem;
+        color: rgba(77, 54, 123, 255);
+        padding-bottom: 5px;
+    }
+    #cardEvent img {
+        border-radius: 20px;
+    }
+    #infoEvent {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #localEvent {
+        color: goldenrod;
+        font-weight: bold;
+    }
+    #dateEvent {
+        font-weight: bold;
+    }
+    #btn-event {
+        background: transparent;
+        border: transparent;
+    }
     #footer {
-        background: rgba(77, 54, 123, 255);
         height: 250px;
         position: absolute;
         width: 100%;
@@ -110,27 +134,5 @@
         padding: 100px 25px 0px 25px;
         justify-content: space-between;
         z-index: 1000;
-    }
-    #backFooter img {
-        margin: 25px;
-        max-width: 100px;
-        max-height: 75px;
-        width: auto;
-        height: auto;
-    }
-    #backFooter {
-        display: flex;
-        position: absolute;
-        bottom: 0;
-        padding: 25px;
-        justify-content: space-between;
-    }
-    #paragrafe {
-        color: white;
-        padding: 35px;
-    }
-    #animatedButton {
-        background: transparent;
-        border: transparent;
     }
 }
