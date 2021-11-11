@@ -1,0 +1,172 @@
+@media (max-width: 600px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'helvetica';
+        font-style: normal;
+    }
+    a {
+        text-decoration: none;
+    }
+    body {
+        background-color: rgba(77, 54, 123, 255);
+    }
+    li {
+        padding: 25px 0px;
+    }
+    ul {
+        list-style: none;
+    }
+    #buttonInsideMenu {
+        color: white;
+        background-color: rgba(77, 54, 123, 255);
+        border-radius: 0px 6px 6px 0px;
+        font-size: xx-large;
+        padding: 5px;
+        margin: 2px;
+    }
+    #logo {
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    #header {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        height: 70px;
+        padding: 1rem;
+        justify-content: space-between;
+        background-color: rgba(77, 54, 123, 255);
+    }
+    #menu {
+        display: block;
+        list-style: none;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: white;
+        z-index: 100;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #btn-menu {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    #hamburguer {
+        color: white;
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #containerTitle {
+        padding: 20px;
+    }
+    #format {
+        display: flex;
+        justify-content: space-around;
+    }
+    #resume {
+        display: flex;
+        padding: 20px 0px 0px 0px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #resumeFinal {
+        color: white;
+        display: flex;
+        padding: 20px;
+        justify-content: flex-end;
+    }
+    #cadastre {
+        color: white;
+        display: flex;
+        padding: 20px;
+        justify-content: flex-end;
+    }
+    #inputContainer {
+        color: white;
+        padding: 15px 0px 0px 30px;
+        display: grid;
+        justify-items: stretch;
+    }
+    #inputText {
+        border-radius: 6px;
+    }
+    #request {
+        color: white;
+        display: flex;
+        padding: 20px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #request label {
+        padding: 5px;
+        font-size: x-large;
+    }
+    #request button {
+        padding: 5px;
+        background: transparent;
+        border: transparent;
+    }
+    #cadastre {
+        align-items: center;
+    }
+    #cadastre img {
+        padding: 5px;
+    }
+    #footer {
+        height: 250px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    #imageMenu {
+        display: none;
+    }
+    #imageMenu img {
+        margin: 25px;
+        max-width: 100px;
+        max-height: 75px;
+        width: auto;
+        height: auto;
+    }
+    #footer.active #imageMenu {
+        display: flex;
+        position: relative;
+        padding: 100px 25px 0px 25px;
+        justify-content: space-between;
+        z-index: 1000;
+    }
+}

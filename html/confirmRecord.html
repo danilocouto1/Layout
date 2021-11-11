@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha seu evento</title>
+    <link rel="stylesheet" href="../css/confirmRecord.css" />
+</head>
+
+<body>
+    <header id="header">
+        <a id="logo" href="">SEUS DADOS</a>
+        <nav id="nav">
+            <button id="btn-menu">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li><a id="buttonInsideMenu" href="">MEUS DADOS</a></li>
+                <li><a id="buttonInsideMenu" href="">PEDIDOS    </a></li>
+                <li><a id="buttonInsideMenu" href="">HISTÓRICO</a></li>
+                <li><a id="buttonInsideMenu" href="">MENSAGENS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="containerTitle">
+        <p><b style="align-items: center; color: goldenrod;">NÃO GRAVAMOS OS DADOS SENSÍVEIS DE SEU CARTÃO!</b> <br> ELE SERÁ USADO UNICAMENTE PARA ESTA COMPRA EM AMBIENTE SEGURO. SERÁ GERADO UM QRCODE PARA QUE POSSA RETIRAR SEU PEDIDO.</p>
+    </div>
+
+    <div id="inputContainer">
+        <label>Numero de cartão</label>
+        <input type="text" style="font-size: 18pt; height: 40px; width:280px;" id="inputText">
+    </div>
+    <div id="inputContainer">
+        <label>Nome</label>
+        <input type="text" style="font-size: 18pt; height: 40px; width:280px;" id="inputText">
+    </div>
+    <div id="format">
+        <div id="inputContainer">
+            <label>Validade</label>
+            <input type="text" style="font-size: 18pt; height: 40px; width:80px;" id="inputText">
+        </div>
+        <div id="inputContainer">
+            <label>Código</label>
+            <input type="text" style="font-size: 18pt; height: 40px; width:60px;" id="inputText">
+        </div>
+    </div>
+    <div id="request">
+        <img src="../image/money.png" width="30" height="30" alt="logo">
+        <label>PEDIR</label>
+        <button><img src="../image/duas_setas-removebg-preview.png" width="30" height="30" alt="seta"></button>
+    </div>
+    <footer id="footer">
+        <div id="imageMenu">
+            <img src="../image/WebSampa.png" alt="">
+            <img src="../image/PDV.png" alt="">
+        </div>
+    </footer>
+    <script src="../js/activateButton.js"></script>
+</body>
+
+</html>
